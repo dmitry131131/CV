@@ -1,0 +1,101 @@
+\documentclass{cv}
+\usepackage{amsmath}
+
+\begin{document}
+\colorbox{leftColor}{%
+\noindent\adjustbox{padding=0.5cm 1cm 0.5cm 1cm,margin=0cm}{
+\begin{minipage}[t][25.7cm][t]{0.33\textwidth}
+
+% Add elements in the first column here
+\name{}{Antontsev Dmitry}{photo.jpg} % First name and last name
+%\profilImage{profil.jpeg}
+\email{dmitrijantoncev8274@gmail.com}\\ % email
+\mobile{+79653328859}\\ % phone number
+\github{dmitry131131} \\ % GitHub profile
+
+%Education section
+\section{Education}
+\vspace{0.2cm}
+\textbf{\large MIPT}\\
+\text{\normalize Radio engineering and computer technology,}\\
+\text{\normalize Applied Mathematics and Physics} \\
+\textbf{Coursework:} course in system programming and compiler technologies by Ilya Dedinsky\\
+
+\textbf{GPA(informatics):} \hspace{1cm}   \textbf{9.0/10}\\
+\textbf{GPA(general):}     \hspace{1.7cm} \textbf{7.15/10}
+
+%skills section
+\section{Hard skills}
+\myitem{\large Languages:}{\large C/C++, x86-64 ASM, Python, \LaTeX} 
+\vspace{0.2cm}
+\myitem{\large Libraries:}{\large SFML, graphviz, Matplotlib} 
+\vspace{0.2cm}
+\myitem{\large Tools:}{\large Git, Make, Valgrind, EDB, Ghidra} 
+
+\section{Soft skills}
+\text{\large Quick involvement in work, the ability }
+\text{\large to study theory for a long time, sociability}
+
+%Language section
+\section{Langues}
+\begin{itemize}
+    \item Russian  \hfill \progressbar[filledcolor=black]{1.0}
+    \item English  \hfill \progressbar[filledcolor=black]{0.55}
+\end{itemize}
+
+\end{minipage}}}% DO NOT TOUCH LINE 42 TO 45
+\colorbox{rightColor}{%
+\noindent\adjustbox{padding=0.5cm 1cm 0.5cm 1cm,margin=0cm}{
+\begin{minipage}[t][25.7cm][t]{0.55\textwidth}
+
+%------------------------------------------------------------------------
+
+% Add elements in the second column here
+\jobTitle{\Huge MAIN PROJECTS} % job title
+\vspace{0.8 cm}
+%
+\section{\textbf{\huge C projects}}
+\vspace{0.3cm}
+\datesubsection{Compiler}{January -- May 2024}
+Link: \href{https://github.com/dmitry131131/DIY_Language}{\textcolor{blue}{\underline{https://github.com/dmitry131131/DIY\_Language}}} \\
+
+This project is a programming language compiler that can be used to compile programs into an elf file for x86-64 architecture or into bytecode for virtual CPU
+
+\datesubsection{Virtual CPU}{November 2023}
+Link: \href{https://github.com/dmitry131131/Simple_processor}{\textcolor{blue}{\underline{https://github.com/dmitry131131/Simple\_processor}}} \\
+
+The processor (virtual machine) can execute programs written in a special language (special assembler). The processor also has a separate video core, which allows you to display black and white images on the screen.
+
+\datesubsection{Protected stack}{October 2023}
+Link: \href{https://github.com/dmitry131131/Stack_task}{\textcolor{blue}{\underline{https://github.com/dmitry131131/Stack\_task}}} \\
+
+This is a library that implements a stack data type. A special feature of this solution is the high reliability of the stack from the influence of other programs. The stack is protected by canary protection and is also hashed.
+
+\datesubsection{Differentiator}{December 2023}
+Link: \href{https://github.com/dmitry131131/Differentiator}{\textcolor{blue}{\underline{https://github.com/dmitry131131/Differentiator}}} \\
+
+Program for calculating derivatives of functions.
+The main task is to work with the tree, simplify it and make informative graphic dumps of tree.
+
+% Project section
+\section{\textbf{\huge C + Asm projects}}
+\vspace{0.3cm}
+\datesubsection{Mandelbrot-Set \& Alpha Blending}{March 2024}
+Link: \href{https://github.com/dmitry131131/SIMD_project}{\textcolor{blue}{\underline{https://github.com/dmitry131131/SIMD\_project}}} \\
+
+This program generates and visualizes the Mandelbrot set and blends two images in several different ways. Also implemented optimizations using AVX instructions and analyzed their effectiveness.
+
+\datesubsection{Hash-table}{April 2024}
+Link: \href{https://github.com/dmitry131131/Hash_table}{\textcolor{blue}{\underline{https://github.com/dmitry131131/Hash\_table}}} \\
+
+In this project I analyzed the load-factor of 7 different hash functions. Also I made profile-guided optimization using Callgrind with graphs and detailed descriptions. For example I used inline functions, asm functions and intel intrinsics.
+
+%Eduction section
+\section{\textbf{\huge Other achievements}}
+\vspace{0.3cm}
+\datesubsection{\large Prize-winner of the All-Russian Olympiad for schoolchildren in physics}{April 2023}
+\vspace{0.3cm}
+\datesubsection{\large Prize-winner of the International Experimental Physics Olympiad}{December 2022}
+
+\end{minipage}}}
+\end{document}
